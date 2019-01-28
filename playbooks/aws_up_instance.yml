@@ -1,0 +1,10 @@
+---
+- hosts: "{{ ansible_hosts }}"
+  connection: local
+  gather_facts: False
+ 
+  vars_files:
+    - aws_keys.yml
+
+  roles:
+  - aws/up_instance
