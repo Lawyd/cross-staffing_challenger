@@ -1,0 +1,13 @@
+[local]
+localhost
+
+[sa-east-1]
+localhost
+
+[sa-east-1:vars]
+instance_type=t2.micro
+security_group=ansible
+image=ami-0f1253070285f5e5d
+keypair=123456
+region=sa-east-1
+count=5
